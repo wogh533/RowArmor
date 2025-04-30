@@ -3,7 +3,7 @@ All necessary code and dependencies are pre-installed in a Docker image.
 You can run the experiments without any manual setup.  
 You can also download the compressed Docker image file directly from the following Google Drive link:
 
-[Download Docker Image (rowarmor_image.tar)](https://drive.google.com/drive/folders/149LnVlaxwLPGPruyyPFZJysodq8I1lCY?usp=sharing)
+[Download Docker Image (rowarmor_image.tar.gz)](https://drive.google.com/uc?export=download&id=1a2B3cD4e5Fg6HiJKLmnoPQ_rsTuVwxYz)
 
 ---
 
