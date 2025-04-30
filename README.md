@@ -1,6 +1,65 @@
 # RowArmor: Efficient and Comprehensive Protection Against DRAM Disturbance Attacks
+All necessary code and dependencies are pre-installed in a Docker image.  
+You can run the experiments without any manual setup.  
+You can also download the compressed Docker image file directly from the following Google Drive link:
 
-## Getting Started
-To clone this repository, run:
-```sh
-git clone https://github.com/wogh533/RowArmor.git
+[Download Docker Image (rowarmor_image.tar)]([https://your-google-drive-link](https://drive.google.com/drive/folders/149LnVlaxwLPGPruyyPFZJysodq8I1lCY?usp=sharing))
+
+---
+
+## Quick Start (Using Docker)
+
+To get started immediately:
+
+```bash
+docker pull wogh533/rowarmor
+docker run -it wogh533/rowarmor
+```
+
+## Running Experiments
+
+We provide two scripts to automate the build and execution processes for our experiments.
+
+### 1. Attack Success Probability Simulation
+
+This simulation measures the attack success probability under various conditions.
+
+To run:
+
+    cd /RowArmor
+    ./run_attack_success.sh <N> <BER>
+
+- <N>: Number of attackers (≤ 128)
+- <BER>: Bit error rate in percentage (e.g., 0.01, 0.1, 1, 2, 4, 10)
+
+Example:
+
+    ./run_attack_success.sh 64 0.1
+
+The script will automatically:
+- Build the source code in Attack_success_probability/src
+- Navigate to Attack_success_probability/bin
+- Execute the compiled binary with the provided parameters
+
+### 2. Reliability Simulation
+
+This simulation evaluates the reliability of the RowArmor scheme.
+
+To run:
+
+    cd /RowArmor
+    ./run_reliability_sim.sh
+
+The script will automatically:
+- Clean and build the source code in Reliability_simulation
+- Run the run.py Python script
+
+## Notes
+
+- Ensure you are inside the /RowArmor directory when executing the scripts.
+- If any additional Python packages are required when running run.py, they can be installed via:
+
+    pip3 install <package_name>
+
+- These experiments assume a basic Ubuntu environment with build-essential tools and Python 3 installed.
+
