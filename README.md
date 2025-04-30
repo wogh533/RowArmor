@@ -26,7 +26,7 @@ This simulation measures the attack success probability under various conditions
 
 To run:
 
-    cd /RowArmor
+    cd /root/RowArmor
     ./run_attack_success.sh <N> <BER>
 
 - <N>: Number of attackers (≤ 128)
@@ -47,7 +47,7 @@ This simulation evaluates the reliability of the RowArmor scheme.
 
 To run:
 
-    cd /RowArmor
+    cd /root/RowArmor
     ./run_reliability_sim.sh
 
 The script will automatically:
