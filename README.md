@@ -1,4 +1,4 @@
-# RowArmor: Efficient and Comprehensive Protection Against DRAM Disturbance Attacks
+# RowArmor
 All necessary code and dependencies are pre-installed in a Docker image.  
 You can run the experiments without any manual setup.  
 You can also download the compressed Docker image file directly from the following Google Drive link:
