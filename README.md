@@ -20,25 +20,25 @@ To get started immediately:
 
 We provide two scripts to automate the build and execution processes for our experiments.
 
-### 1. Attack Success Probability Simulation
+### 1. Security Simulation
 
 This simulation measures the attack success probability under various conditions.
 
 To run:
 
-    cd /root/RowArmor
-    ./run_attack_success.sh <N> <BER>
+    cd /root/RowArmor/sim
+    .sim.sh <N> <BER>
 
 - <N>: Number of attackers (≤ 128)
 - <BER>: Bit error rate in percentage (e.g., 0.01, 0.1, 1, 2, 4, 10)
 
 Example:
 
-    ./run_attack_success.sh 64 0.1
+    ./sim.sh 64 0.1
 
 The script will automatically:
-- Build the source code in Attack_success_probability/src
-- Navigate to Attack_success_probability/bin
+- Build the source code in Security/src
+- Navigate to Security/bin
 - Execute the compiled binary with the provided parameters
 
 ### 2. Reliability Simulation
@@ -47,8 +47,8 @@ This simulation evaluates the reliability of the RowArmor scheme.
 
 To run:
 
-    cd /root/RowArmor
-    ./run_reliability_sim.sh
+    cd /root/RowArmor/sim
+    ./sim.sh
 
 The script will automatically:
 - Clean and build the source code in Reliability_simulation
