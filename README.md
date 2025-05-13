@@ -12,8 +12,8 @@ You can also download the compressed Docker image file directly from the followi
 To get started immediately:
 
 ```bash
-docker pull wogh533/rowarmor
-docker run -it wogh533/rowarmor
+
+
 ```
 
 ## Running Experiments
